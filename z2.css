@@ -1,0 +1,155 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: #729fcf;
+}
+
+/* MENI CSS*/
+#meni{
+	box-sizing: border-box;
+	border: 1px solid #b1c5dd;
+	padding: 10px;
+}
+
+#meni a{
+	text-align: left;
+	padding: 5px;
+}
+#meni p {
+	text-align: center;
+}
+
+
+
+/*ODABIR VJEZBE CSS*/
+#odabirvjezbe{
+	box-sizing: border-box;
+	border: 1px solid #b1c5dd;
+	padding: 3px;
+	width: 100%;
+}
+
+
+.odabirVjezbe button{
+	margin: 5px;
+	padding: 5px;
+	background-color: #e1e2ec;
+	width: 100%;
+
+}
+
+.zadaci button {
+	margin: 5px;
+	padding: 5px;
+	background-color: #96bad5;
+	height: 30px;
+	width: auto;
+}
+
+
+
+#zadaci {
+	background-color: #4377a3;
+	width: 100%;
+	margin-left: 5px;
+	margin-right: 5px;
+	
+}
+
+#zadatak{
+	background-color: #96bad5;
+	width: auto;
+}
+
+/* GRAF CSS*/
+.graf{
+	box-sizing: border-box;
+	border: 1px solid #b1c5dd;
+}
+img {
+	height: 120px;
+	width: 100%;
+}
+
+
+/*RESPONZIVNOST*/
+
+#meni {
+	grid-area: meni;
+}
+
+#odabirvjezbe {
+	grid-area: odabirvjezbe;
+}
+.graf {
+	grid-area: graf;
+}
+#grafovi {
+	grid-area: grafovi;
+	height: 100px;
+}
+
+
+@media all and (min-width: 801px) {
+	#meni {
+		height: 100px;
+	}
+	#grafovi {
+		
+	}
+	#graf1, #graf3 {
+		padding: 5px;
+		float: left;
+		width: 50%
+	}
+	#graf2, #graf4 {
+		padding: 5px;
+		float: right;
+		width: 50%
+	}
+
+	#odabirvjezbe{
+		
+	}
+
+	#grid {
+		display: grid;
+		padding: 0px;
+		
+		grid-column-gap: 10px;
+		grid-row-gap: 0px;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+			"meni meni"
+			"odabirvjezbe grafovi"
+		;
+	}
+}
+
+
+@media all and (max-width: 800px) {
+	#grid {
+		display: grid;
+		grid-gap: 0px;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			"meni"
+			"odabirvjezbe"
+			"grafovi"
+		;
+	}
+
+	img {
+	height: 300px;
+	width: 100%;
+	}
+}
+
+
+
+	/*.graf {       
+		padding: 5px;
+	}*/
+}
