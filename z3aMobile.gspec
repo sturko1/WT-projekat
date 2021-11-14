@@ -1,0 +1,66 @@
+@objects
+	body body
+	meni #meni
+	forma #forma
+	urlD #urlD
+	godD #godD
+	branchD #branchD
+	btn #btn
+
+	h1 h1
+
+= Width section =
+	h1:
+		width 98 to 100 % of body/width
+	forma:
+		width 98 to 100 % of body/width
+= Height section =
+	btn:
+		height 30px
+= Inside section =
+	godD:
+		inside forma
+	urlD:
+		inside forma
+	branchD:
+		inside forma
+	btn:
+		inside forma
+
+= Left of section =
+
+= Right of section =
+
+= Above section =
+	urlD:
+		above godD
+	godD:
+		above branchD
+	branchD:
+		above btn
+
+
+= Below section =
+	godD:
+		below urlD
+	branchD:
+		below godD
+	btn: 
+		below branchD
+
+= Visible section =
+	forma:
+		visible
+	urlD:
+		visible
+	godD:
+		visible
+	branchD:
+		visible
+	btn:
+		visible
+
+= Inside partly section =
+	h1:
+		inside partly body ~0px left, ~0px top
+	
