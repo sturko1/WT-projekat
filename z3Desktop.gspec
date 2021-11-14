@@ -1,0 +1,89 @@
+@objects
+	body body
+	meni #meni
+	forma1 #forma1
+	forma2 #forma2
+	vjezbaD #vjezbaD
+	zadatakD #zadatakD
+	verzijaD #verzijaD
+	komD #komD
+	btn #btn
+
+	errorD #errorD
+	greskaD #greskaD
+	btn2 #btn2
+
+	h1 h1
+
+= Width section =
+	h1:
+		width 98 to 100 % of body/width
+	forma1:
+		width 98 to 100 % of body/width
+	forma2:
+		width 98 to 100 % of body/width
+
+= Height section =
+
+= Inside section =
+	vjezbaD:
+		inside forma1
+	zadatakD:
+		inside forma1
+	verzijaD:
+		inside forma1
+	errorD:
+		inside forma2
+	greskaD:
+		inside forma2
+	btn2:
+		inside forma2
+
+= Left of section =
+	vjezbaD:
+		left-of zadatakD
+	zadatakD:
+		left-of verzijaD
+
+= Right of section =
+	zadatakD:
+		right-of vjezbaD
+	greskaD:
+		right-of errorD
+= Above section =
+	forma1:
+		above forma2
+	komD:
+		above btn
+	errorD:
+		above btn2
+	greskaD:
+		above btn2
+
+= Below section =
+	btn:
+		below komD
+	btn2:
+		below greskaD
+
+= Visible section =
+	forma1:
+		visible
+	forma2:
+		visible
+	vjezbaD:
+		visible
+	zadatakD:
+		visible
+	btn:
+		visible
+	btn2:
+		visible
+	greskaD:
+		visible
+	errorD:
+		visible
+= Inside partly section =
+	h1:
+		inside partly body ~0px left, ~0px top
+	
