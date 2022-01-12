@@ -1,0 +1,156 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: mistyrose;
+}
+
+#meni {
+	box-sizing: border-box;
+	border:1px solid #f07dc7; 
+	border-collapse: collapse;
+	grid-area: meni;
+	background-color: #f07dc7;
+}
+
+#vjezbelnk{
+	box-sizing: border-box;
+	border-collapse: collapse;
+}
+
+#studentilnk{
+	box-sizing: border-box;
+	border-collapse: collapse;
+}
+
+#meni p {
+	text-align: center;
+}
+
+#grupe {
+	box-sizing: border-box;
+	border:1px solid #b1c5dd;
+	border-collapse: collapse;
+	grid-area: grupe;
+}
+
+table {
+	padding: 30px;
+}
+tr, td, th {
+	text-align: center;
+	box-sizing: border-box;
+	border-collapse: collapse;
+	border: 5px solid pink;
+	padding: 20px;
+}
+
+#studenti {
+	box-sizing: border-box;
+	border:1px solid #b1c5dd;
+	border-collapse: collapse;
+	grid-area: studenti;
+	background-color: #f5cee7;
+}
+
+.lista  {
+	padding: 20px;
+	background-color: #e882e0;
+	text-align: center;
+	box-sizing: border-box;
+	border:  1px solid black;
+	border-collapse: collapse;
+}
+
+#gridLista{
+	padding: 20px;
+	grid-gap: 10px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+@media all and (min-width: 800px) {
+	#meni {
+		height: 100px;
+	}
+	#studenti {
+	float: left;
+	height: 668px;
+	width: 60%;
+	}
+
+	#grupe {
+	float: right;
+	height: 668px;
+	width: 40%;
+	}
+
+	#vjezbelnk{
+	padding-left: 20px;
+}
+	#grupelnk{
+	padding-left: 20px;
+}
+
+}
+
+
+@media all and (min-width:500px) and (max-width: 799px){
+	#meni {
+		height: 100px;
+	}
+
+	#grid {
+		display: grid; 
+		grid-gap: 0px;
+		grid-template-areas: "meni"
+		"grupe"
+		"studenti";
+	}
+	#grupe {
+		width: 100%;
+	}
+	#studenti{
+		width: 100%;
+	}
+
+		#vjezbelnk{
+	padding-left: 20px;
+}
+	#grupelnk{
+	padding-left: 20px;
+}
+
+}
+
+@media all and (max-width:499px) {
+	#grid {
+		display: grid; 
+		grid-template-areas: "meni"
+		"grupe"
+		"studenti";
+	}
+	#grupe {
+		width: 100%;
+	}
+	#studenti{
+		width: 100%;
+	}
+	#vjezbelnk {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+	#grupelnk {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+
+	table {
+		width: 100%;
+	}
+	.sakrij{
+		display: none;	
+	}
+
+}

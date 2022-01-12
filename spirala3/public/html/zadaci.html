@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Zadatak3</title>
+	<link rel="stylesheet" type="text/css" href="zadaci.css">	
+</head>
+<body>
+	<h1>ZADACI</h1>
+	<form id = "forma1">
+		<div id = "vjezbaD">
+		<label for="odabirVježbe">Odaberite vježbu:</label>
+
+		<select name="Vjezbe" id="cars">
+		  <option value="vjezba1">VJEŽBA1</option>
+		  <option value="vjezba2">VJEŽBA2</option>
+		  <option value="vjezba3">VJEŽBA3</option>
+		  <option value="vjezba4">VJEŽBA4</option>
+		  <option value="vjezba5">VJEŽBA5</option>
+		  <option value="vjezba6">VJEŽBA6</option>
+		</select>
+	</div>
+
+	<div id = "zadatakD">
+		<label for="odabirZadatka">Odaberite zadatak:</label>
+
+		<select name="Zadaci" id="cars">
+		 <option value="zadatak1">ZADATAK1</option>
+		 <option value="zadatak2">ZADATAK2</option>
+		 <option value="zadatak3">ZADATAK3</option>
+		 <option value="zadatak4">ZADATAK4</option>
+		 <option value="zadatak5">ZADATAK5</option>
+
+		</select>
+	</div>
+
+	<div id ="verzijaD">
+		<label for="odabirVerzije">Odaberite verziju:</label>
+
+		<select name="Verzija" id="odabirVerzije">
+		 <option value="verzija1">VERZIJA1</option>
+		 <option value="verzija2">VERZIJA2</option>
+		 <option value="verzija3">VERZIJA3</option>
+		 <option value="verzija4">VERZIJA4</option>
+		 <option value="verzija5">VERZIJA5</option>
+
+		</select>
+	</div>
+
+	<div id = "komD">
+		<label for="kom">Komentar: </label>
+
+			<textarea id="kom" name="">	</textarea>
+	</div>
+
+		<button id ="btn">Pošalji</button>
+	</form>
+
+
+	<form id = "forma2">
+
+	<div id ="errorD">	
+		<label for="">Errors log</label>
+		<input type="text" id = "error" name="errorsLog">
+	</div>
+
+	<div id = "greskaD">
+		<label for="">bez grešaka</label>
+		<input type="checkbox" id = "greska" name="bezGresaka">
+	</div>
+
+		<button id = "btn2">dodaj rezultate testa</button>
+	</form>
+</body>
+</html>

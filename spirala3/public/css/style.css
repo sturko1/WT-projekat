@@ -1,0 +1,36 @@
+body {
+    background-color: darksalmon;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#unos {
+    background-color: honeydew;
+}
+
+.input-btn {
+    margin: 5px;
+	padding: 5px;
+	background-color: #ec608a;
+	width: 100%;
+}
+
+.labele {
+    margin: 15px;
+	padding: 6px;
+	background-color: #b44264;
+	width: auto;
+    float: left;
+}
+
+#zadaci{
+    display:inline-block;
+    box-sizing: border-box;
+    width:30%;
+    margin:10px;
+    margin: auto;
+  padding: 10px;
+  
+}

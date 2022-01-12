@@ -1,0 +1,112 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+h1 {
+	text-align: center;
+	padding: 30px;
+}
+
+#urlD {
+	box-sizing: border-box;
+	border-collapse: collapse;
+	grid-area: urlD;
+	padding: 5px;
+}
+
+#godD {
+	box-sizing: border-box;
+	border-collapse: collapse;
+	grid-area: godD;
+	padding: 5px;
+}
+
+#branchD {
+	box-sizing: border-box;
+	border-collapse: collapse;
+	grid-area: branchD;
+	padding: 5px;
+}
+
+#btn {
+	box-sizing: border-box;
+	border-collapse: collapse;
+	grid-area: btn;
+	border: 5px solid #ff80e3;
+}
+/*
+#forma {
+	background-color: whitesmoke;
+	box-sizing: border-box;
+	border: 1px solid violet;
+	border-collapse: collapse;
+
+	grid-template-areas: "urlD godD"
+	"branchD ."
+	"btn .";
+}
+*/
+
+#forma {
+	box-sizing: border-box;
+	border: 10px solid violet;
+	border-collapse: collapse;
+
+}
+
+
+@media all and (min-width: 800px) {
+	#forma {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas: "urlD godD branchD"
+		". btn .";
+		height: 300px;
+	}
+	div {
+		text-align: center;
+	}
+	#btn {
+		height: 50px;
+	}
+}
+
+@media all and (min-width: 501px) and (max-width: 799px) {
+	#forma {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas: "godD urlD branchD"
+		". btn .";
+		height: 200px;
+	}
+	div {
+		text-align: center;
+	}
+	#btn {
+		height: 40px;
+	}
+}
+
+@media all and (max-width: 500px) {
+	#forma {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: 1fr;
+		grid-template-areas: "urlD"
+		"godD"
+		"branchD"
+		"btn";
+	}
+	div {
+		text-align: center;
+	}
+	#btn {
+		height: 30px;
+	}
+}
+

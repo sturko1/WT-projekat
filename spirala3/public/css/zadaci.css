@@ -1,0 +1,143 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+h1 {
+	padding: 30px;
+	text-align: center;
+}
+body {
+	box-sizing: border-box;
+	border-collapse: collapse;
+	background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+#forma1 {
+	padding: 5%;
+}
+#forma2 {
+	padding: 10%;
+}
+
+#vjezbaD {
+	grid-area: vjezbaD;
+}
+
+#zadatakD {
+	grid-area: zadatakD;
+}
+
+#verzijaD {
+	grid-area: verzijaD;
+}
+
+#komD {
+	grid-area: komD;
+}
+#komD label{
+}
+
+#btn {
+	grid-area: btn;
+}
+
+/* FORMA2*/
+#errorD{
+	grid-area: errorD;
+}
+
+#greskaD {
+	grid-area: greskaD;
+}
+#btn2 {
+	grid-area: btn2;
+}
+
+@media all and (min-width: 800px) {
+	#forma1{
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas: 
+		"vjezbaD zadatakD verzijaD"
+		". komD ."
+		". btn .";
+	}
+
+	#forma2{
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+		"errorD greskaD"
+		". btn2";
+	}
+	#btn {
+	height: 50px;
+	grid-area: btn;
+}
+
+#btn2 {
+	grid-area: btn2;
+	width: 200px;
+}
+
+}
+
+@media all and (min-width: 501px) and (max-width: 799px){
+	#forma1{
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas: 
+		"vjezbaD verzijaD zadatakD"
+		". komD ."
+		". btn .";
+	}
+
+	#forma2{
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 
+		"greskaD errorD"
+		". btn2";
+	}
+	#btn {
+	height: 30px;
+	grid-area: btn;
+}
+
+#btn2 {
+	grid-area: btn2;
+	width: 200px;
+}
+
+}
+
+@media all and (max-width: 500px) {
+	#forma1{
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"vjezbaD"
+		"verzijaD"
+		"zadatakD"
+		"komD"  /* mozes staviti jedno pored drugog*/
+		"btn";
+	}
+
+	#forma2{
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"errorD"
+		"greskaD"
+		"btn2";
+	}
+	#btn {
+	height: 20px;
+	grid-area: btn;
+}
+}
