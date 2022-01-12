@@ -24,20 +24,36 @@ body {
 
 
 /*ODABIR VJEZBE CSS*/
-#odabirvjezbe{
+#odabirVjezbe{
 	box-sizing: border-box;
 	border: 1px solid #b1c5dd;
 	padding: 3px;
 	width: 100%;
+	/*background: fuchsia;*/  
 }
 
 
-.odabirVjezbe button{
+/*.vjezbe button{
 	margin: 5px;
 	padding: 5px;
-	background-color: #e1e2ec;
+	background-color: #ece1e3;
 	width: 100%;
 
+}*/
+
+.dugmadVjezbe {
+	margin: 5px;
+	padding: 5px;
+	background-color: #4f708b;
+	width: 100%;
+}
+
+.dugmadZadaci {
+	margin: 5px;
+	padding: 5px;
+	background-color: #830b55;
+	height: 30px;
+	width: auto;
 }
 
 .zadaci button {
@@ -96,9 +112,6 @@ img {
 	#meni {
 		height: 100px;
 	}
-	#grafovi {
-		
-	}
 	#graf1, #graf3 {
 		padding: 5px;
 		float: left;
@@ -110,9 +123,6 @@ img {
 		width: 50%
 	}
 
-	#odabirvjezbe{
-		
-	}
 
 	#grid {
 		display: grid;
@@ -152,4 +162,3 @@ img {
 	/*.graf {       
 		padding: 5px;
 	}*/
-}
