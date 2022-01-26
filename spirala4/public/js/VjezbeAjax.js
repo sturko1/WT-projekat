@@ -91,7 +91,6 @@ var dohvatiPodatke = function (fnCallback){
       data:pogresni
   }
   
-
   if(pogresni.length>0) {
     res.send(JSON.stringify(objekat));
     res.status(404);

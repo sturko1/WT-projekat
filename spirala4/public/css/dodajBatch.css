@@ -1,0 +1,23 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: #729fcf;
+    text-align: center;
+    padding-top: 150px;
+}
+h1 {
+    padding-bottom: 50px;
+    
+}
+textarea {
+    width: 350px;
+    height: 100px;
+    padding: 10px; 
+    border:3px dashed indigo;
+    background-color:aliceblue;
+}
+label {
+    font-size: 25px;
+}
