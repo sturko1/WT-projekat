@@ -29,3 +29,4 @@ db.student.belongsTo(db.grupa);
 db.vjezba.hasMany(db.zadatak);
 db.zadatak.belongsTo(db.vjezba);
 module.exports = db;
+//komentar
